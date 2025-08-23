@@ -1,4 +1,5 @@
-def sorting(s):
-    return ''.join(sorted(s))
+# def sorting(s):
+#     return ''.join(sorted(s))
 
-print(sorting("swiss"))
+# print(sorting("swiss"))
+
