@@ -55,12 +55,34 @@
 #       a,b=b,a+b
 # fib(4)
 
-def prime(n):
-    if n<=1:
-        return False
-    for i in range(2,int(math.sqrt(n))+1):
-        if n%i==0:
-            return False
-    return True
-print(prime(17))
+# def prime(n):
+#     if n<=1:
+#         return False
+#     for i in range(2,int(math.sqrt(n))+1):
+#         if n%i==0:
+#             return False
+#     return True
+# print(prime(17))
 
+# def freqCount(arr):
+#     freq = {}
+#     for i in arr :
+#         if i in freq:
+#             freq[i]+=1
+#         else:
+#             freq[i]=1
+#     return freq
+# print(freqCount([2,1,2,3,4,3,2,1]))
+        
+# arr=[4,5,6,2,4,2]
+# new=list(set(arr))
+# print(new)
+
+arr= [2,1,3,5,4]
+left=0
+right = len(arr)-1
+while left<right:
+    arr[left],arr[right] = arr[right],arr[left]
+    left+=1
+    right-=1
+print(arr)

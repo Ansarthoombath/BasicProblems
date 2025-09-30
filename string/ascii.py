@@ -6,3 +6,5 @@ def change(str,n):
         result+=chr(num+ord('a'))
     return result
 print(change("abhyz",4))
+
+# eflcd
